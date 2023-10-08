@@ -1,0 +1,7 @@
+added viewBox="0 0 {original-width} {original-height}"
+remove width, set height to 100% ((width: "auto" is invalid. it probably defaults to the same thing as removing it.))
+svg is now controlled by height of container
+container is already present in Logo, so don't need to added
+
+if a height is supplied to Logo, it will be passed to the container. Otherwise, a container height of 100% will be used.
+This container can be put inside another container if required for some reason (?)
