@@ -14,11 +14,11 @@ export default function Commitment() {
       </ImageWrapper> */}
       <ImageWrapper>
         <source
-          media={`(${BREAKPOINTS.desktopAndUpAndUp})`}
+          media={`(${BREAKPOINTS.desktopAndUp})`}
           srcSet="src/assets/about/desktop/image-commitment.jpg"
         />
         <source
-          media={`(min-width: 56.25rem)`}
+          media={`(${BREAKPOINTS.tabletAndUp})`}
           srcSet="src/assets/about/tablet/image-commitment.jpg"
         />
         <img src="src/assets/about/mobile/image-commitment.jpg" alt="" />
@@ -69,14 +69,14 @@ const ImageWrapper = styled.div`
     border-radius: var(--radius);
   }
 
-  /* @media (${BREAKPOINTS.tabletAndUp}) {
-    margin-bottom: 0;
-    height: 470px;
-  } */
-  @media (min-width: 56.25rem) {
+  @media (${BREAKPOINTS.tabletAndUp}) {
     margin-bottom: 0;
     height: 470px;
   }
+  /* @media (min-width: 56.25rem) {
+    margin-bottom: 0;
+    height: 470px;
+  } */
 
   @media (${BREAKPOINTS.desktopAndUp}) {
     height: 520px;
